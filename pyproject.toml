@@ -1,0 +1,35 @@
+[project]
+name = "visualnav-transformer"
+version = "0.1.0"
+requires-python = ">=3.8"
+readme = "README.md"
+license = {file = "LICENSE"}
+
+# This is a minimal pyproject specifying dependencies for uv
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "ipykernel",
+    "torch",
+    "torchvision",
+    "tqdm==4.64.0",
+    "git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git",
+    "opencv-python==4.6.0.66",
+    "h5py==3.6.0",
+    "wandb==0.12.18",
+    "rosbag",
+    "roslz4",
+    "prettytable",
+    "efficientnet-pytorch",
+    "warmup-scheduler",
+    "diffusers==0.11.1",
+    "lmdb",
+    "vit-pytorch",
+    "positional-encodings",
+    "pyyaml",
+    "rospkg"
+]
+
+[tool.uv]
+index-url = "https://pypi.org/simple"
+extra-index-url = ["https://rospypi.github.io/simple/"]
